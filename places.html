@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pearl of the Indian Ocean</title>
+	<link rel="stylesheet" type="text/css" href="css/places.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+
+<!--navigation bar creted-->
+
+
+<div class="header">
+	<div class="max-width">
+          <a href="index.html" class="logo"> 
+          <i class="fab fa-affiliatetheme"></i>Pearl of the Indian Ocean.</a>
+        <nav>
+	       <ol>		      
+		      <a href="aboutus.html">About us</a>
+		      <a href="contact.html">Contact us</a>
+		      <a href="information.html">Information</a>
+		      <a href="places.html"class="Active">Places</a>
+		      <a href="index.html">Home</a>
+	       </ol>
+        </nav>
+    </div>
+</div>
+
+
+<!--Todo list created, this list created from html, css, Vue js-->
+
+<div class="ToDoList">	
+    <img src="img/business-people-planning-illustration-tiny.jpg">
+
+    <div id="app">
+	    <div class="container">
+		    <input type="text" placeholder="Enter Your Task Hear..." :style="{ 'background-color':color }" v-model="task" @keyup.enter="addTask ">
+		    <button @click="addTask">ADD <i class=" fas fa-plus"></i></button>
+	    </div>
+	    <br><br>
+
+	    <ul class="list">
+		    <li v-for="(t,index) in taskList" :key="index"> {{ t }} 
+			    <i @click="removeTask(index)" class="fas fa-trash-alt"></i>
+		    </li>
+	    </ul>
+    </div>
+</div>
+
+
+<div class="Banerone">
+	<span>For your convenience, we have divided the visiting places in Sri Lanka into districts.
+	</span>
+</div>
+
+
+
+
+<!--places list created,I use css,javascript, created this list,  this section has a 20 places -->
+
+
+<div class="baner">
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Colombo</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup1')">View</a>
+		</div>
+	</div>
+
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup1')"></i>            
+         
+    <div class="mainspan">Welcome to Colombo !!!</div>
+    <div class="subbaner">
+		
+    <div class="cardtwo">
+		  <div class="text">Gangaramaya Temple</div>
+			<img src="img/colombo/gangaramaya-temple.jpg"><br>
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Dutch Museum</div>
+			<img src="img/colombo/dutch-museum.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lotus Tower</div>
+			<img src="img/colombo/lotus-tower.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lavinia Beach</div>
+			<img src="img/colombo/mount-lavinia-beach.jpg"><br>
+			
+		</div>
+
+        <div class="cardtwo">
+		  <div class="text">National Museum</div>
+			<img src="img/colombo/national-museum-colombo.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Bere Lake</div>
+			<img src="img/colombo/bere-lake.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Nelum Pokuna</div>
+			<img src="img/colombo/nelum-pokuna-mahinda-rajapaksa-theatre.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Floating Market</div>
+			<img src="img/colombo/pettah-floating-market.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Red Mosque</div>
+			<img src="img/colombo/red-mosque.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Viharamahadevi Park</div>
+			<img src="img/colombo/viharamahadevi-park.jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>   
+  </div>
+
+
+
+
+  <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Kandy</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup2')">View</a>
+		</div>
+	</div>
+
+ <div class="popup" id="popup2">
+    <div class="popup-content">
+    <i class="far fa-times-circle" id="close" onclick="clickoff('popup2')"></i>            
+         
+    <div class="mainspan">Welcome to Kandy !!!</div>
+    <div class="subbaner">
+
+        <div class="cardtwo">
+		    <div class="text">Temple-of-tooth</div>
+			<img src="img/kandy/download.jfif"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Bahirawakanda</div>
+			<img src="img/kandy/download (1).jfif"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Sigiriya</div>
+			<img src="img/kandy/e8.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Hanthana</div>
+			<img src="img/kandy/download (2).jfif"><br>			
+		</div>
+
+
+		<div class="cardtwo">
+			<div class="text">Ella</div>
+			<img src="img/kandy/download (3).jfif"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Botanicle garden</div>
+			<img src="img/kandy/download (4).jfif"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Gadaladeniya</div>
+			<img src="img/kandy/download (5).jfif"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ranawana</div>
+			<img src="img/kandy/download (6).jfif"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Nelligala</div>
+			<img src="img/kandy/images.jfif"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Hanthana</div>
+			<img src="img/kandy/download (2).jfif"><br>			
+		</div>
+
+	</div>
+   </div>    
+  </div>
+
+
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Anuradhapura</p>
+		    <a href="#" class="button" id="button" onclick="clickon('popup3')">View</a>
+		</div>
+	</div>
+
+	
+
+ <div class="popup" id="popup3">
+   <div class="popup-content">
+    <i class="far fa-times-circle" id="close" onclick="clickoff('popup3')"></i>            
+         
+    <div class="mainspan">Welcome to Anuradhapura !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Samadhi Buddha</div>
+			<img src="img/Anuradhapuraya/52211259.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ruins</div>
+			<img src="img/Anuradhapuraya/0702212738.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Wilpattu national</div>
+			<img src="img/Anuradhapuraya/WILPATTU-NATIONAL.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ritigala</div>
+			<img src="img/Anuradhapuraya/Ritigala_path.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Brazen Palace</div>
+			<img src="img/Anuradhapuraya/698974774.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Maha viharaya</div>
+			<img src="img/Anuradhapuraya/Anuradhapura_Bo.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lankarama</div>
+			<img src="img/Anuradhapuraya/Lankarama_Dagab0.jfif"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Mihintale</div>
+			<img src="img/Anuradhapuraya/Mihintale-vista.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Abhayagiri</div>
+			<img src="img/Anuradhapuraya/31080465008_c.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Isurumuniya</div>
+			<img src="img/Anuradhapuraya/Isurumuniya.jfif"><br>			
+		</div>
+
+	</div>
+   </div>  
+  </div>
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>polonnaruwa</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup4')">View</a>
+		</div>
+	</div>
+
+		
+  <div class="popup" id="popup4">
+    <div class="popup-content">
+    <i class="far fa-times-circle" id="close" onclick="clickoff('popup4')"></i>            
+         
+    <div class="mainspan">Welcome to polonnaruwa !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Lankatilaka</div>
+			<img src="img/polonnaruwa/800px-Lankatilak7.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Vatadage</div>
+			<img src="img/polonnaruwa/7153673487_.jpg"><br>
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Dalada Maluva</div>
+			<img src="img/polonnaruwa/7844980216.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Archaeological Museum</div>
+			<img src="img/polonnaruwa/42047062790.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Archaeological Museum</div>
+			<img src="img/polonnaruwa/42047062790.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Pothgul viharaya</div>
+			<img src="img/polonnaruwa/44900694562_91.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">National park</div>
+			<img src="img/polonnaruwa/44948685951.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kiri vihara</div>
+			<img src="img/polonnaruwa/45282650195_.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Gal viharaya</div>
+			<img src="img/polonnaruwa/Gal_Viharaya.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Girithale Wewa</div>
+			<img src="img/polonnaruwa/Giritale_tank_20190627225643.jpeg"><br>			
+		</div>
+
+	</div>
+  </div>  
+ </div>
+
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Trincomalee</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup5')">View</a>
+		</div>
+	</div>
+
+
+    <div class="popup" id="popup5">
+    <div class="popup-content">
+    <i class="far fa-times-circle" id="close" onclick="clickoff('popup5')"></i>            
+         
+    <div class="mainspan">Welcome to Trincomalee !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Fort Frederick</div>
+			<img src="img/Trincomale/Fort-Fredrick.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Koneswaram Temple</div>
+			<img src="img/Trincomale/Koneswaram-Temple.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Pathirakali Temple</div>
+			<img src="img/Trincomale/Pathirakali-Amman-Temple.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Velgam Vehera</div>
+			<img src="img/Trincomale/Velgam-Vehera1.jpg"><br>			
+		</div>
+        
+    <div class="cardtwo">
+			<div class="text">Maritime Museum</div>
+			<img src="img/Trincomale/Maritime-and-Naval-History-Museum.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Nilaveli Beaches</div>
+			<img src="img/Trincomale/Nilaveli-Beach.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Pigeon Island</div>
+			<img src="img/Trincomale/Pigeon-Island-National-Park1.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">War Cemetery</div>
+			<img src="img/Trincomale/Trincomalee-War-Cemetery.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Seruwila Vihara</div>
+			<img src="img/Trincomale/Seruvila-Mangala-Raja-Maha-Vihara.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">St Mary’s Cathedral</div>
+			<img src="img/Trincomale/St.-Marys-Cathedral.jpg"><br>			
+		</div>
+
+	</div>
+   </div>   
+  </div>
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Ampara</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup6')">View</a>
+		</div>
+	</div>
+
+    <div class="popup" id="popup6">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup6')"></i>            
+         
+    <div class="mainspan">Welcome to Ampara !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Kumana National Park</div>
+			<img src="img/Ampara/birds-at-kumana.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Galoya National Park</div>
+			<img src="img/Ampara/gal-oya-national-park.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Deegavapi</div>
+			<img src="img/Ampara/deegavapi-stupa.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Rajagala</div>
+			<img src="img/Ampara/img20190323144351-largejpg.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lahugala Viharaya</div>
+			<img src="img/Ampara/temple.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Buddhangala Monastery</div>
+			<img src="img/Ampara/temple (1).jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lahugala Park</div>
+			<img src="img/Ampara/mahwewa-bungalow-side.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Crocodile Rock</div>
+			<img src="img/Ampara/magnifiques-plages-tres.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Aranthalawa Massacre</div>
+			<img src="img/Ampara/img20201121140600-largejpg.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lakpuara LLC</div>
+			<img src="img/Ampara/photos-from-guests.jpg"><br>			
+		</div>
+
+	</div>
+   </div>   
+  </div>
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Badulla</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup7')">View</a>
+		</div>
+	</div>
+
+
+
+    <div class="popup" id="popup7">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup7')"></i>            
+         
+    <div class="mainspan">Welcome to Badulla !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Muthiyangana Temple</div>
+			<img src="img/Badulla/Worshipping-in-Muthiyangana-Temple.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Badulla’s Devalaya</div>
+			<img src="img/Badulla/Spend-Good-Times-in-Badulla’s-Kataragama-Devalaya.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Old Welekade Market</div>
+			<img src="img/Badulla/Shopping-in-the-Old-Welekade-Market.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Dunhinda Falls</div>
+			<img src="img/Badulla/Visit-the-Dunhinda-Falls.jpg"><br>		
+		</div>
+
+		<div class="cardtwo">
+			<div class="text"> Bogoda Wooden Bridge</div>
+			<img src="img/Badulla/Spending-Some-Time-Near-the-Bogoda-Ancient-Wooden-Bridge.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Halpewatte Tea Factory</div>
+			<img src="img/Badulla/Exploring-the-Famous-Halpewatte-Tea-Factory.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">St. Mark's Church</div>
+			<img src="img/Badulla/Visit-St.-Marks-Church.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Memorable Fox Hill</div>
+			<img src="img/Badulla/Looking-at-the-Memorable-Fox-Hill-Event.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Demodara Railway. S</div>
+			<img src="img/Badulla/Explore-the-Beauty-of-Demodara-Railway-Station.jpg"><br>			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Dhowa Rock Temple</div>
+			<img src="img/Badulla/dhowa-rock-temple1.jpg"><br>		
+		</div>
+
+	</div>
+   </div>   
+  </div>
+
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Batticaloa</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup8')">View</a>
+		</div>
+	</div>
+
+
+<div class="popup" id="popup8">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup8')"></i>            
+         
+    <div class="mainspan">Welcome to Batticaloa !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Batticaloa Fort</div>
+			<img src="img/Batticalo/Batticaloa-Fort-shutterstock_1074815363.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Batticaloa Lagoon</div>
+			<img src="img/Batticalo/Batticaloa-Lagoon-shutterstock_283418834.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kallady Bridge</div>
+			<img src="img/Batticalo/Kallady-Bridge.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kallady Beach</div>
+			<img src="img/Batticalo/Kallady-Beach.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kalkudah and Passikudah</div>
+			<img src="img/Batticalo/Kalkudah-and-Passikudah.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Batticaloa Lighthouse</div>
+			<img src="img/Batticalo/Batticaloa-Lighthouse.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">St Marys Cathedral</div>
+			<img src="img/Batticalo/St-Mary’s-Cathedral.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Unnichchai Tank</div>
+			<img src="img/Batticalo/Unnichchai-Tank.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Hindu Temples</div>
+			<img src="img/Batticalo/Hindu-Temples.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kattankudy Museum</div>
+			<img src="img/Batticalo/Kattankudy-Heritage-Museum1.jpg"><br>
+			
+		</div>
+
+	</div>
+   </div> 
+  </div>
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Jaffna</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup9')">View</a>
+		</div>
+	</div>
+
+
+<div class="popup" id="popup9">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup9')"></i>            
+         
+    <div class="mainspan">Welcome to Jaffna !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Sanguppidi Bridge</div>
+			<img src="img/jafna/100f1f000001gqcbkD70B_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Jaffna Port</div>
+			<img src="img/jafna/100i1f000001gp47v0480_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kandaswamy Kovil</div>
+			<img src="img/jafna/1A0l13000000tz456FDFD_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kayts Causeway</div>
+			<img src="img/jafna/0ww61120008yp9zebBCAC_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Nallur Kovil</div>
+			<img src="img/jafna/0ww2e120008yl00rx6E80_C_348_236.jpg"><br>
+			
+		</div>		
+
+				<div class="cardtwo">
+			<div class="text">Nagadipa Vihara</div>
+			<img src="img/jafna/0ww67120008yejqgd69C2_C_348_236.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Murikandy Shrine</div>
+			<img src="img/jafna/0ww52120008zgcrfj461A_C_348_236.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Seven Wells Beach</div>
+			<img src="img/jafna/0ww1m120008ycubwt698A_C_348_236.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Thalaiyadi Beach</div>
+			<img src="img/jafna/0ww711200091b798t53FD_C_348_236.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Nagadeepa Viharaya</div>
+			<img src="img/jafna/0ww1s120008ys1o9t7ABC_C_760_506.jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>   
+  </div>
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Negombo</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup10')">View</a>
+		</div>
+    </div>
+
+<div class="popup" id="popup10">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup10')"></i>            
+         
+    <div class="mainspan">Welcome to Negombo !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Negombo Beach</div>
+			<img src="img/Negombo/10041f000001gp8mq0530_C_760_506.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lagoon</div>
+			<img src="img/Negombo/100w0z000000o06bf164F_C_760_506.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Dutch Canal</div>
+			<img src="img/Negombo/CggYHFXT-IOAO274AAMpgromuI0979_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Sailing</div>
+			<img src="img/Negombo/CggYGVY4LEuAKT6oAAEOWUETeQg144_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Angkaramulla Temple</div>
+			<img src="img/Negombo/0ww21120006pwo2ib52E5_C_760_506.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Don Renuka S Art </div>
+			<img src="img/Negombo/ww0m1e000001fes1002A6_C_760_506.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Spa Secret</div>
+			<img src="img/Negombo/0ww65120008yyvpye25C9_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Leisure Paradise</div>
+			<img src="img/Negombo/0ww4e120008yybug04F72_C_348_236.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">St Anne Schurch</div>
+			<img src="img/Negombo/100i0z000000nkw0wFE30_C_760_506.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Rose Ayurvedic Center</div>
+			<img src="img/Negombo/0ww4e1200094awnz93579_C_760_506.jpg"><br>
+			
+		</div>
+
+	 </div>
+    </div>   
+  </div>
+
+
+
+
+    <div class="card">
+		<div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Puttalam</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup11')">View</a>
+		</div>
+	</div>
+
+
+<div class="popup" id="popup11">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup11')"></i>            
+         
+    <div class="mainspan">Welcome to Puttalam !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Kalpitiya Diving Center</div>
+			<img src="img/puttalam/Kalpitiya-Diving-Center.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Margarita Village</div>
+			<img src="img/puttalam/Margarita-Village.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Wilpattu National Park</div>
+			<img src="img/puttalam/Wilpattu-National-Park.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Surfpoint Kite Village</div>
+			<img src="img/puttalam/Surfpoint-Srilanka-Kite-Village.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kalpitiya</div>
+			<img src="img/puttalam/Kalpitiya1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Hindu Temple</div>
+			<img src="img/puttalam/Munneshwaram-Hindu-Temple.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">St. Anne’s Church</div>
+			<img src="img/puttalam/St._Anne_of_Thalawila__Sri_Lanka_700x453uuyt.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">The Spot</div>
+			<img src="img/puttalam/The-Spot.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Adventure Centre</div>
+			<img src="img/puttalam/Epic-Encounters-Dive-Adventure-Centre.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kite Center</div>
+			<img src="img/puttalam/Kite-Center.jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>   
+  </div>
+
+
+
+    <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Galle</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup12')">View</a>
+	    </div>
+    </div>
+
+
+
+<div class="popup" id="popup12">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup12')"></i>            
+         
+    <div class="mainspan">Welcome to Galle !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Galle Fort</div>
+			<img src="img/galle/Galle-Fort1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Flag Rock</div>
+			<img src="img/galle/Flag-Rock1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Museum of Galle</div>
+			<img src="img/galle/National-Museum-of-Galle.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Peace Pagoda</div>
+			<img src="img/galle/Japanese-Peace-Pagoda1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Unawatuna</div>
+			<img src="img/galle/Unawatuna.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Reformed Church</div>
+			<img src="img/galle/Dutch-Reformed-Church-Galle.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Mansion Museum</div>
+			<img src="img/galle/Galle-Historical-Mansion-Museum.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Fort Clock Tower</div>
+			<img src="img/galle/Clock-Tower-In-Galle.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lighthouse</div>
+			<img src="img/galle/Galle-Lighthouse.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">St Joseph's Chapel</div>
+			<img src="img/galle/St-Joseph-Chapel-Galle.jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>  
+  </div>
+
+
+
+   <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Nuwara Eliya</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup13')">View</a>
+	    </div>
+    </div>
+
+
+<div class="popup" id="popup13">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup13')"></i>            
+         
+    <div class="mainspan">Welcome to Nuwara Eliya !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Horton National Park</div>
+			<img src="img/Nuwara Eliya/img-20180227-161024-707.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Bluefield Tea Gardens</div>
+			<img src="img/Nuwara Eliya/bluefield-tea-gardens.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Gregory Lake</div>
+			<img src="img/Nuwara Eliya/gregory-lake-nuwara-eliya.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lovers Leap Falls</div>
+			<img src="img/Nuwara Eliya/one-of-piduruthalagala.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Sita Temple</div>
+			<img src="img/Nuwara Eliya/20160305-073541-largejpg.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">PedroTea Factory</div>
+			<img src="img/Nuwara Eliya/20170203-014610-largejpg.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Hakgala Gardens</div>
+			<img src="img/Nuwara Eliya/hakgala-botanic-gardens.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Bomburu Waterfall</div>
+			<img src="img/Nuwara Eliya/2-st-clair-s-falls.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Victoria Park</div>
+			<img src="img/Nuwara Eliya/victoria-park.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ambewela Farms</div>
+			<img src="img/Nuwara Eliya/view.jpg"><br>
+			
+		</div>
+	</div>
+   </div>
+  </div>
+
+
+
+   <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Kegalle</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup14')">View</a>
+	    </div>
+    </div>
+
+
+
+<div class="popup" id="popup14">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup14')"></i>            
+         
+    <div class="mainspan">Welcome to Kegalle !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Elephanat freedom</div>
+			<img src="img/Kagalla/photo1jpg.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text"> Elephant foundation</div>
+			<img src="img/Kagalla/raja-on-his-walk-very.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Pinnawala jumbos</div>
+			<img src="img/Kagalla/dsc-0209-largejpg.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Algama fall</div>
+			<img src="img/Kagalla/screenshot-20181207-151902.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Elephant care foundation</div>
+			<img src="img/Kagalla/caption.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Happy mango tours</div>
+			<img src="img/Kagalla/happy-mango-tours-sri.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Milano cineplex</div>
+			<img src="img/Kagalla/milano-cineplex.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Remarkable Expeditions</div>
+			<img src="img/Kagalla/caption (1).jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">santo tourse</div>
+			<img src="img/Kagalla/getlstd-property-photo.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Paradise tourse</div>
+			<img src="img/Kagalla/caption (2).jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>
+  </div>
+
+
+  <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Hambantota</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup15')">View</a>
+	    </div>
+  </div>
+
+
+
+<div class="popup" id="popup15">
+    <div class="popup-content">
+    <i class="far fa-times-circle" id="close" onclick="clickoff('popup15')"></i>            
+         
+    <div class="mainspan">Welcome to Hambantota !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Yala National Park</div>
+			<img src="img/Hambantota/Yala-National-Park1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Hot Springs</div>
+			<img src="img/Hambantota/Madunagala-Hot-Spring.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ussangoda National Park</div>
+			<img src="img/Hambantota/Ussangoda-National-Park.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Birds Research Centre</div>
+			<img src="img/Hambantota/macaw_700x400.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Mirijjawila Botanic Garden</div>
+			<img src="img/Hambantota/Mirijjawila-Botanic-Garden1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Agro Technology Park</div>
+			<img src="img/Hambantota/Agro-Technology-Park.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Walawe River Safari</div>
+			<img src="img/Hambantota/Walawe-river-safari.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ramba Viharaya</div>
+			<img src="img/Hambantota/photo2jpg_700x400.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Buddhist Monastery</div>
+			<img src="img/Hambantota/Sithulpawwa-Buddhist-monastery.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Mulkirigala Rock Temple</div>
+			<img src="img/Hambantota/Mulkirigala-rock-temple.jpg"><br>
+			
+		</div>
+	</div>
+   </div>
+ </div>
+
+
+
+   <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Kalutara</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup16')">View</a>
+	    </div>
+    </div>
+
+
+
+  <div class="popup" id="popup16">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup16')"></i>            
+         
+    <div class="mainspan">Welcome to Kalutara !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Kalutara Bodhiya</div>
+			<img src="img/Kalutara/Kalutara-Bodhiya.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Richmond Castle</div>
+			<img src="img/Kalutara/Richmond-Castle2.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kalutara Beach</div>
+			<img src="img/Kalutara/cxcxcBeach.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Thudugala Waterfall</div>
+			<img src="img/Kalutara/Thudugala-Ella-Waterfall.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">West Tattoo Studio</div>
+			<img src="img/Kalutara/West-Coast-Tattoo-Studio.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Fa Hien Caves</div>
+			<img src="img/Kalutara/Fa-Hien-Caves1.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Holy Cross Church</div>
+			<img src="img/Kalutara/Holy-Cross-Church-Kalutara.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Ranjiths Carving</div>
+			<img src="img/Kalutara/Ranjiths-Carving-and-Batik-Museum.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Asokaramaya Temple</div>
+			<img src="img/Kalutara/Asokaramaya-Buddhist-Temple.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Forest Hermitage</div>
+			<img src="img/Kalutara/Bodhinagala-Forest-Hermitage.jpg"><br>
+			
+		</div>
+
+	  </div>
+    </div>
+   </div>
+
+
+
+   <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Gampaha</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup17')">View</a>
+	    </div>
+    </div>
+
+
+
+<div class="popup" id="popup17">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup17')"></i>            
+         
+    <div class="mainspan">Welcome to Gampaha !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Maligatenna Viharaya</div>
+			<img src="img/Gampaha/stupa-at-the-summit.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Guruge Nature Park</div>
+			<img src="img/Gampaha/guruge-nature-park.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Museum of Galle</div>
+			<img src="img/Gampaha/botanic-gardens.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Peace Pagoda</div>
+			<img src="img/Gampaha/chinese-impressive-lighted.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Lenawara RAjamaha Viharaya</div>
+			<img src="img/Gampaha/lenawara-rajamaha-viharaya.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Tailored Tours</div>
+			<img src="img/Gampaha/getlstd-property-photo.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kumara with Lanka Tour</div>
+			<img src="img/Gampaha/caption.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Destination Tours</div>
+			<img src="img/Gampaha/getlstd-property-photo (1).jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Heritance Tours</div>
+			<img src="img/Gampaha/getlstd-property-photo (2).jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Trendy Walks Tour</div>
+			<img src="img/Gampaha/caption (1).jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>
+  </div>
+
+
+   <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Kurunegala</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup18')">View</a>
+	    </div>
+    </div>
+
+
+
+<div class="popup" id="popup18">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup18')"></i>            
+         
+    <div class="mainspan">Welcome to Kurunegala !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Samadhi Buddha</div>
+			<img src="img/Kurunegala/Samadhi-Meditation-Buddha.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text"> Welagedara Stadium</div>
+			<img src="img/Kurunegala/Welagedara-Cricket-Stadium.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Kurunegala Lake</div>
+			<img src="img/Kurunegala/Kurunegala-Lake.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Animal Rocks </div>
+			<img src="img/Kurunegala/Animal-Rocks.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Intercity Bus Ride</div>
+			<img src="img/Kurunegala/Local-Intercity-Bus-Ride.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Ridi Viharaya </div>
+			<img src="img/Kurunegala/Buddhist-Site.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">In And Out</div>
+			<img src="img/Kurunegala/In-And-Out_26th-mar.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Padeniya Raja Vihara</div>
+			<img src="img/Kurunegala/Padeniya-Raja-Maha-Vihara.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Yapahuwa</div>
+			<img src="img/Kurunegala/Yapahuwa.jpg"><br>
+			
+		</div>
+
+				<div class="cardtwo">
+			<div class="text">Athugala</div>
+			<img src="img/Kurunegala/download.jfif"><br>
+			
+		</div>
+
+	  </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Matale</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup19')">View</a>
+	    </div>
+    </div>
+
+
+
+<div class="popup" id="popup19">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup19')"></i>            
+         
+    <div class="mainspan">Welcome to Matale !!!</div>
+    <div class="subbaner">
+	
+    <div class="cardtwo">
+		  <div class="text">Revestan Mountain</div>
+			<img src="img/Matale/800px-Knuckles_Range_20190616133834.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Weedaruwa</div>
+			<img src="img/Matale/Meemure_Paddy_Fields_20200113232659.jfif"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Muthumarimman Temple</div>
+			<img src="img/Matale/Matale_Sri_Muttumariyamman_Kovil_20190702122530.jfif"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Aluvihare Temple</div>
+			<img src="img/Matale/Matale_aluviharaya_20190627234223.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Sembuwatta Lake</div>
+			<img src="img/Matale/800px-Sembuwatta00125_20190722143719.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Nalanda Gedige</div>
+			<img src="img/Matale/Nalanda_Gedige_temple_20190715154428.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Pitawala pathana</div>
+			<img src="img/Matale/800px-Mini_worldsend_madolsima_20190715160531.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Bambarakiri Ella</div>
+			<img src="img/Matale/Untitled_20190715153718.png"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Wasgamuwa Park</div>
+			<img src="img/Matale/WASGAMUWA-NATIONAL-PARK_20190718153802.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Spice Garden</div>
+			<img src="img/Matale/Spices1_20200113233758.jpg"><br>
+			
+		</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+    <div class="card">
+	    <div class="box">
+			<i class="fas fa-map-marked-alt"></i>
+			<h2>Matara</p>
+			<a href="#" class="button" id="button" onclick="clickon('popup20')">View</a>
+	    </div>
+    </div>
+
+
+
+<div class="popup" id="popup20">
+      <div class="popup-content">
+      <i class="far fa-times-circle" id="close" onclick="clickoff('popup20')"></i>            
+         
+    <div class="mainspan">Welcome to Matara !!!</div>
+    <div class="subbaner">
+	
+        <div class="cardtwo">
+		    <div class="text">Star Fort</div>
+			<img src="img/Matara/Star-Fort-PlacesMatarepb0310.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Nupe Market</div>
+			<img src="img/Matara/Old-Dutch-Trade-Centre-PlacesMatarepb0310.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Weherahena Temple</div>
+			<img src="img/Matara/Weherahena-Templa-PlacesMatarepb0310.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Polhena Beach</div>
+			<img src="img/Matara/Polhena-Beach-PlacesMatarepb0310.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Crow Island</div>
+			<img src="img/Matara/Crow-Island-PlacesMatarepb0310.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Dondra Lighthouse</div>
+			<img src="img/Matara/Dondra-Head-Lighthouse-PlacesMatarepb0310.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Paravi Duwa Temple</div>
+			<img src="img/Matara/1200px-Islet_in_Matara.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Matara Beach</div>
+			<img src="img/Matara/Matara_Beach_Sri_Lanka.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Medawatta Beach</div>
+			<img src="img/Matara/medawatta-beach.jpg"><br>
+			
+		</div>
+
+		<div class="cardtwo">
+			<div class="text">Matara Railway</div>
+			<img src="img/Matara/how-to-reach-matara.jpg"><br>
+			
+		</div>
+
+	</div>
+   </div>
+  </div>
+
+</div>    
+
+
+
+
+
+<!--footer section-->
+
+<footer>
+	<div class="BanerSix">
+
+		<div class="FooterCardOne">
+		   <span>Site Link</span>
+		   <li><a href="index.html"><i class="fas fa-bell"></i>Home</a></li>
+		   <li><a href="places.html"><i class="fas fa-bell"></i>Places</a></li>
+		   <li><a href="information.html"><i class="fas fa-bell"></i>Information</a></li>
+		   <li><a href="contact.html"><i class="fas fa-bell"></i>Contact us</a></li>
+		   <li><a href="aboutus.html"><i class="fas fa-bell"></i>About us</a></li>
+		</div>
+        
+        <div class="FooterCardTwo">
+		   <span>Contact Info</span>
+           <li><a href="#"><i class="fas fa-phone"></i> 011-6745395 </a></li>
+           <li><a href="#"><i class="fas fa-phone"></i> 078-6736528 </a></li>
+           <li><a href="#"><i class="fas fa-envelope"></i> Travel@gmail.com </a></li>
+           <li><a href="#"><i class="fas fa-map"></i>No 8, Kandy, Srilanka </a></li>
+		</div>
+
+		<div class="FooterCardThree">
+		   <span>Follow Us</span>
+		   <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+		   <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+		   <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+		   <li><a href="https://www.linkedin.com/in/lahiru-eranda-87818921a/" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+		   <li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i>Pinterest</a></li>
+		</div>
+
+		<div class="FooterCardFour">
+		   <span>Other sites</span>
+		   <li><a href="https://meetinsrilanka.com/" target="_blank"><i class="fas fa-angle-double-right"></i>sri lankan tourism development authority.</a></li>
+		   <li><a href="https://www.sltda.gov.lk/en" target="_blank"><i class="fas fa-angle-double-right"></i>sri lankan tourism convention bureau.</a></li>
+		   <li><a href="https://www.tourismmin.gov.lk/" target="_blank"><i class="fas fa-angle-double-right"></i>Ministry of tourism.</a></li>   
+		   <li><a href="https://www.srilankan.com/en_uk/lk" target="_blank"><i class="fas fa-angle-double-right"></i>Sri lankan airlines.</a></li>
+		   <li><a href="https://www.airport.lk/index" target="_blank"><i class="fas fa-angle-double-right"></i>Sri lankan airport and aviation services.</a></li>
+		</div>
+
+		<h3>&copy; Design By Lahiru Eranda | All Rights Reserved!</h3>
+	</div>
+
+	<img src="img/mountain-climbing.jpg">
+
+</footer>
+
+
+<!--java script Pop up window code-->
+
+<script>
+//pop up window display
+function clickon(id) {
+	document.getElementById(id).style.display =  "block";
+}
+
+// pop up window close
+function clickoff(id) {
+	document.getElementById(id).style.display =  "none";
+}
+
+</script>
+
+<!-- Vue js link from google -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<!-- link to the script.js -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

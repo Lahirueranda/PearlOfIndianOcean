@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+/*font family link from google*/
+
+/* this style added for full page */
+*{margin: 0px; padding: 0px;}
+
+body{
+	background-repeat: no-repeat;
+	background-size:1349px 680px;	 
+}
+
+
+/*  Navigation bar style */
+
+.header .max-width{
+    padding:0 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    background-color: #ffffff63;
+}
+
+.header .max-width .logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: #111111;
+}
+
+.header .max-width .logo i{
+   color: #219150;
+   padding: 18px;
+}
+
+.header nav ol a{
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+	color: #111111;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	padding: 8px 18px;
+	transition:all 0.3s ease;
+}
+
+nav .Active{
+	border-radius: 5px;
+	background-color: #2191508a;
+	color: #fff;
+}
+
+.header nav ol a:hover{
+	padding: 8px 18px;
+	border-radius: 5px;
+	background-color: #219150;
+	color: #fff;
+}
+
+
+/* baner style */
+
+.Baner{
+	margin: 100px 0 0 700px;
+	width: 550px;
+	height: 350px;
+	position: absolute;
+}
+
+.Baner spanone{
+   color: #111111;
+   font-family: 'Poppins', sans-serif;
+   font-size: 40px; 
+}
+
+.Baner spantwo{
+   color: #219150;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   font-size: 55px;
+}
+
+.Baner p{
+	font-size: 18px;
+    font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+
+.Baner spanthree a{
+   position:absolute;
+   color: #111111;
+   padding:10px 30px;
+   border: 2px solid #15543c;
+   font-size: 18px;
+   font-family: 'Poppins', sans-serif;
+   transition:all 0.3s ease;
+   text-decoration: none;
+}
+
+spanthree a:hover{
+	background-color:#10221b;
+	color: #fff;
+	cursor: pointer;
+}
+
+.banerTwo{
+	margin-top: 630px;
+	width: 100%;
+}
+
+.banerTwo span{
+	font-size: 50px;
+	color: #219150;
+	font-family: 'Poppins', sans-serif;
+}
+
+.banerTwo p{
+	padding: 20px 30px 0px 30px;
+	font-size: 20px;
+	text-indent: 50px;
+	font-family: 'Hind', sans-serif;
+	color: #10221b;
+}
+
+
+
+
+/* Home page's Card section style */
+
+
+
+.Card{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.Card a{
+	padding: 18px;
+	margin: 30px;
+	width: 350px;
+	height: 270px;
+    border: 2px solid #15543c;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #10221b;
+}
+
+.Card a i{
+    font-size: 40px;
+    color: #219150;
+}
+
+.Card a span{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #219150;
+}
+
+.Card a p{
+    font-size: 18px;
+    font-family: 'Hind', sans-serif;
+   
+}
+
+.Card a:hover i{
+	color: #fff;
+}
+
+.Card a:hover span{
+	color: #fff;
+}
+
+.Card a:hover{
+	transition: all 0.3s ease;
+	background-color: #219150;
+	color: #fff;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+/* baner three section style */
+
+
+
+.BanerThree{
+	margin-top: 0px;
+	padding: 30px;
+	height: 500px;
+}
+
+.BanerThree img{
+	float: right;
+    height: 520px;
+    width: 850px;
+}
+
+.BanerThree .SubBanar{
+	position: absolute;
+	background-color: #2a9d5a91;
+	padding: 85px 0 0 40px;
+	margin-top: 90px;
+	border-radius: 5px;
+	width: 800px;
+	height: 280px;
+}
+
+.BanerThree .SubBanar span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.BanerThree .SubBanar p{
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    padding:10px 0 10px 0;
+}
+
+.BanerThree .SubBanar a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px;
+	color: #15543c;
+	border:2px solid #15543c;
+	transition:all 0.3s ease;
+}
+
+.BanerThree .SubBanar a:hover{
+	color: #fff;
+	background-color: #10221b;
+}
+
+
+
+h2{
+   font-family: 'Poppins', sans-serif;
+   font-size: 45px;
+   color: #219150;
+   margin-top: 20px;
+}
+
+.Cardtwo{
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.Cardtwo .Subcard{
+	padding: 18px;
+	margin: 30px;
+	width: 350px;
+	height: 380px;
+    border: 2px solid #15543c;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #10221b;
+}
+
+.Cardtwo .Subcard img{
+    width: 230px;
+    height: 200px;
+    border-radius: 5px;
+   
+}
+
+.Cardtwo .Subcard i{
+    font-size: 40px;
+    color: #219150;
+}
+
+.Cardtwo .Subcard span{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #219150;
+}
+
+.Cardtwo .Subcard p{
+    font-size: 18px;
+    font-family: 'Hind', sans-serif;
+}
+
+.Cardtwo .Subcard:hover i{
+	color: #fff;
+}
+
+.Cardtwo .Subcard:hover span{
+	color: #fff;
+}
+
+.Cardtwo .Subcard:hover{
+	transition: all 0.3s ease;
+	background-color: #219150;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+/* bnaer four style */
+
+
+.BanerFour{
+	height: 600px;
+	margin-top: 30px;
+	padding: 30px;
+	
+}
+
+.BanerFour .SubBanar{
+	position: absolute;
+	background-color: #eeeeee6b;
+	padding: 37px 40px 0 40px;
+	margin-top: 90px;
+	border-radius: 5px;
+	width: 800px;
+	height: 280px;
+}
+
+.BanerFour img{
+    height: 600px;
+	width: 100%;
+}
+
+.BanerFour .SubBanar span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.BanerFour .SubBanar p{
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    padding:10px 0 10px 0;
+}
+
+.BanerFour .SubBanar a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px;
+	color: #15543c;
+	border:2px solid #15543c;
+	transition:all 0.3s ease;
+}
+
+.BanerFour .SubBanar a:hover{
+	color: #fff;
+	background-color: #10221b;
+}
+
+
+
+/* baner five style */
+
+
+.BanerFive{
+	height: 600px;
+	margin-top: 30px;
+	padding: 30px;
+	
+}
+
+.BanerFive .SubBanar{
+	position: absolute;
+	padding: 40px;
+	margin-top: 10px;
+	border-radius: 5px;
+	margin-top: 90px;
+	width: 800px;
+	background-color: #eeeeee6b;
+	height: 280px;
+}
+
+.BanerFive img{
+    height: 600px;
+	width: 100%;
+}
+
+.BanerFive .SubBanar span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.BanerFive .SubBanar p{
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    padding:10px 0 10px 0;
+}
+
+.BanerFive .SubBanar a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px;
+	color: #15543c;
+	border:2px solid #15543c;
+	transition:all 0.3s ease;
+}
+
+.BanerFive .SubBanar a:hover{
+	color: #fff;
+	background-color: #10221b;
+}
+
+
+
+/* Subscribe section style */
+
+
+.Subscribe{
+	margin-top: 10px;
+	padding: 30px;
+}
+
+.Subscribe span{
+	 font-family: 'Poppins', sans-serif;
+	 font-size: 40px;
+	 color: #219150;
+     font-weight: bolder;
+} 
+
+.Subscribe .email{
+	padding-left: 20px;
+	width: 400px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.Subscribe i{
+	font-size: 40px;
+	color: #fff;
+	padding: 5px 15px 5px 15px;
+	background-color: #219150;
+	margin-left: 805px;
+	position: absolute;
+	margin-top: -52px;
+	cursor: pointer;
+}
+
+
+
+/* footer section style */
+
+
+
+footer{
+	margin-top: 30px;
+	width: 100%;
+	padding: 0px;
+}
+
+footer .BanerSix{
+    background-color: #120b0b7a;
+    position: absolute;
+    width: 100%;
+    height:500px;
+}
+
+footer img{
+	width: 100%;
+	height: 500px;
+	border-bottom: 5px solid #219150;	
+}
+
+footer .BanerSix{
+	width: 100%;
+	display: flex;
+}
+
+footer .BanerSix li{
+	padding: 5px;
+	margin: 10px;
+    list-style-type: none;   
+}
+
+footer .BanerSix .FooterCardOne, .FooterCardTwo, .FooterCardThree, .FooterCardFour{
+    padding: 100px 0 0 110px;
+}
+
+footer .BanerSix .FooterCardOne, .FooterCardTwo, .FooterCardThree, .FooterCardThree, li a{
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+footer .BanerSix span{
+     font-family: 'Hind', sans-serif;
+     font-size: 23px;
+     color: #fff;
+}
+
+footer .BanerSix i{
+    color: #219150;
+    padding: 10px;
+}
+
+footer .BanerSix a:hover{
+	color: #318755;
+}
+
+footer .BanerSix h3{
+    position: absolute;
+	margin-left:850px;
+	margin-top: 450px;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
